@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JoKenPo</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 onclick="newGame()">JoKenPo</h1>
+
+    <div class="gameArea">
+      <div class="partida">
+        <h3>escolha</h3>
+        <div class="hands">
+          <div class="player"></div>
+        </div>
+
+        <button id="play">Jogar!</button>
+      </div>
+
+      <div class="resultado"></div>
+      <div class="log">
+        <small>
+          Resultado das partidas!
+          <img class="expand" src="img/expand.svg" alt="" />
+        </small>
+        <div class="log__matches"></div>
+      </div>
+    </div>
+
+    <button id="newGame" class="d-none">Jogar Novamente!</button>
+    <script src="app.js"></script>
+  </body>
+</html>
